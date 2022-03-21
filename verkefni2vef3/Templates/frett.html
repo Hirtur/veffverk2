@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+<title>frettir</title>
+
+{% block content %}
+
+<div class="page-header">
+  <link rel="stylesheet" href="/static/stylesheets/styles.css">
+</div>
+
+<header>
+
+    <nav><h1>Fréttir</h1>
+        <a href="/">Frétta yfirlit</a>
+        <a href="/frettalisti/almennt">Almennt</a>
+        <a href="/frettalisti/sport">Sport</a>
+        <a href="/frettalisti/annad">Annað</a>
+        
+    </nav>
+</header>
+<main>
+    <main>
+        <section class = "banners">
+            <div class ="banner">
+            <h1>Mynd:</h1>
+            <img src="/static/{{ frett ['mynd'] }}" alt="">
+        </div>
+
+        <div class = "banner">
+            <h3> {{ frett ['fyrirsong'] }} </h3>
+            <p> {{ frett ['meginmal'] }} </p>
+            <p> {{ frett ['hofundur'] }} </p>
+            <a href="/" class="linkur">Fréttayfirlit</a>
+        </div>
+
+        </section>
+    </main>
+</main>
+<footer>
+    <div>
+<h2>Alli Malli Snalli</h2>
+    </div>
+    <p>Fréttir birtar í þessuu blaði er skopstæling.</p>
+    <p>Copyright &copy;asdfghjkl 2021</p>
+</footer>
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}

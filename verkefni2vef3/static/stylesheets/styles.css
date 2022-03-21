@@ -1,0 +1,44 @@
+body {
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 0;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background: #97d4f0;
+}
+
+img{
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+nav{
+text-align: center;
+display: block;
+padding: 15px;
+border: 2px solid #655cb4;
+}
+
+.banners{
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 15px;
+    margin-top: 8px;
+}
+.banner{
+    text-align: left;
+    display: block;
+    padding: 17px;
+}
+
+footer{
+    text-align: center;
+    display: block;
+    padding: 15px;
+    border: 2px solid #655cb4;
+    }
